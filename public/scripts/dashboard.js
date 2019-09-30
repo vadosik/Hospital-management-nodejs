@@ -8,7 +8,7 @@ var dynamicTableClickable = true;
 $(document).ready(function() {
   var patientsAPI = URL + "/app/getpatients";
   $.getJSON(patientsAPI).done(function(patients) {
-	  var roomsAPI = URL + "/app/getrooms";
+	  var roomsAPI = URL + "/app/getrooms/";
 	  $.getJSON(roomsAPI).done(function(rooms1) {
 
           // iterate through all rooms
